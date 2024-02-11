@@ -1,0 +1,104 @@
+.money-deposit-box {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.account-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.account-title {
+  flex: 1;
+  text-align: center;
+}
+
+.arrow {
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.amount-section {
+  margin-bottom: 20px;
+}
+
+.amount-title {
+  font-size: 16px;
+  color: #333;
+  margin: 20px auto;
+}
+
+.available-amount {
+  font-size: 14px;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-icon {
+  margin-right: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+}
+
+.unit {
+  font-size: 12px;
+  color: #333;
+}
+
+.estimated-time {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #333;
+  margin-top: 20px;
+}
+
+.clock-icon {
+  margin-right: 5px;
+}
+
+.button-section button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.transfer-button {
+  background-color: #333;
+  color: white;
+  margin-top: 10px;
+}
+
+.cancel-button {
+  /* background-color: ; */
+  color: #333;
+}
