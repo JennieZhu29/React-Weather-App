@@ -1,25 +1,33 @@
 import styled from "styled-components";
 
 export const WeatherInfoIcons = {
-  sunset: "/icon/sun.png",
-  Sunrise: "/icon/sun.png",
-  Humidity: "/icon/water.png",
-  Wind: "/icon/wind.png",
-  Pressure: "/icon/pressure.png",
+  Sunset: "./React-Weather-App/icon/sun.png",
+  Sunrise: "./React-Weather-App/icon/sun.png",
+  Humidity: "./React-Weather-App/icon/water.png",
+  Wind: "./React-Weather-App/icon/wind.png",
+  Pressure: "./React-Weather-App/icon/pressure.png",
 };
 
 // weather logos for diff conditions
 export const WeatherLogos = {
-  "01d": "/icon/sunny.png",
-  "01n": "/icon/night.png",
-  "02d": "/icon/day.png",
-  "02n": "/icon/cloudy-night.png",
-  "03d": "/icon/cloudy.png",
-  "03n": "/icon/cloudy.png",
-  "04d": "/icon/perfect-day.png",
-  "04n": "/icon/cloudy-night.png",
-  "9d": "/icon/rain.png",
-  "09n": "/icon/rain-night.png",
+  "01d": "./React-Weather-App/icon/weathers/clear-sky.png",
+  "01n": "./React-Weather-App/icon/weathers/clear-n.png",
+  "02d": "./React-Weather-App/icon/weathers/few-clouds.png",
+  "02n": "./React-Weather-App/icon/weathers/broken-clouds.png",
+  "03d": "./React-Weather-App/icon/weathers/scattered-clouds.png",
+  "03n": "./React-Weather-App/icon/weathers/scattered-clouds.png",
+  "04d": "./React-Weather-App/icon/weathers/broken-clouds.png",
+  "04n": "./React-Weather-App/icon/weathers/broken-clouds.png",
+  "09d": "./React-Weather-App/icon/weathers/shower-rain.png",
+  "09n": "./React-Weather-App/icon/weathers/shower-rain.png",
+  "10d": "./React-Weather-App/icon/weathers/rain.png",
+  "10n": "./React-Weather-App/icon/weathers/rain-n.png",
+  "11d": "./React-Weather-App/icon/weathers/thunderstorm.png",
+  "11n": "./React-Weather-App/icon/weathers/thunderstorm.png",
+  "13d": "./React-Weather-App/icon/weathers/snow.png",
+  "13n": "./React-Weather-App/icon/weathers/snow.png",
+  "50d": "./React-Weather-App/icon/weathers/mist.png",
+  "50n": "./React-Weather-App/icon/weathers/mist.png",
 };
 
 const WeatherCondition = styled.div`
@@ -34,6 +42,7 @@ const WeatherCondition = styled.div`
 const TempCondition = styled.div`
   margin: 20px auto;
   font-size: 14px;
+  text-transform: capitalize;
   & span {
     font-size: 28px;
   }
@@ -115,18 +124,17 @@ const WeatherInfoCmp = (props) => {
     <>
       <WeatherCondition>
         <TempCondition>
-          <span>{`${Math.floor(weather?.main?.temp - 273)} °C`}</span>
+          <span>{`${Math.floor(weather?.main?.temp - 273)} °C `}</span>
           {`| ${weather?.weather[0].description}`}
         </TempCondition>
-        <WeatherLogo src="/icon/weather.png"></WeatherLogo>
+        <WeatherLogo src={WeatherLogos[weather?.weather[0].icon]}></WeatherLogo>
       </WeatherCondition>
       <Location>{`${weather?.name}, ${weather?.sys?.country}`}</Location>
       <WeatherLabel>Weather Info</WeatherLabel>
       <WeatherInfoContainer>
-        {/* value={weather?.sys?.sunrise}  */}
         <WeatherInfo
           name={isDay ? "Sunset" : "Sunrise"}
-          value={getTime(weather?.sys[isDay ? "Sunset" : "Sunrise"])}
+          value={getTime(weather?.sys[isDay ? "sunset" : "sunrise"])}
         />
         <WeatherInfo name="Humidity" value={weather?.main?.humidity} />
         <WeatherInfo name="Wind" value={weather?.wind?.speed} />
