@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/jenniezhu29.github.io/react-weather-app/static/css/main.e9452167.css",
-    "main.js": "/jenniezhu29.github.io/react-weather-app/static/js/main.39cd5d4e.js",
-    "index.html": "/jenniezhu29.github.io/react-weather-app/index.html",
-    "main.e9452167.css.map": "/jenniezhu29.github.io/react-weather-app/static/css/main.e9452167.css.map",
-    "main.39cd5d4e.js.map": "/jenniezhu29.github.io/react-weather-app/static/js/main.39cd5d4e.js.map"
+    "main.css": "/react-weather-app/static/css/main.e9452167.css",
+    "main.js": "/react-weather-app/static/js/main.d4c58870.js",
+    "index.html": "/react-weather-app/index.html",
+    "main.e9452167.css.map": "/react-weather-app/static/css/main.e9452167.css.map",
+    "main.d4c58870.js.map": "/react-weather-app/static/js/main.d4c58870.js.map"
   },
   "entrypoints": [
     "static/css/main.e9452167.css",
-    "static/js/main.39cd5d4e.js"
+    "static/js/main.d4c58870.js"
   ]
 }
