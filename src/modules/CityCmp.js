@@ -42,7 +42,7 @@ const CityCmp = (props) => {
   return (
     // elements need to be covered by one tag
     <>
-      <WeatherLogo src="./react-weather-app/icon/logo.png"></WeatherLogo>
+      <WeatherLogo src="/react-weather-app/icon/logo.png"></WeatherLogo>
       <WeatherLabel>Find Weather of Your City</WeatherLabel>
       <SearchBox onSubmit={fetchWeather}>
         <input
