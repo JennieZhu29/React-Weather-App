@@ -1,33 +1,33 @@
 import styled from "styled-components";
 
 export const WeatherInfoIcons = {
-  Sunset: "./React-Weather-App/icon/sun.png",
-  Sunrise: "./React-Weather-App/icon/sun.png",
-  Humidity: "./React-Weather-App/icon/water.png",
-  Wind: "./React-Weather-App/icon/wind.png",
-  Pressure: "./React-Weather-App/icon/pressure.png",
+  Sunset: "/react-weather-app/icon/sun.png",
+  Sunrise: "/react-weather-app/icon/sun.png",
+  Humidity: "/react-weather-app/icon/water.png",
+  Wind: "/react-weather-app/icon/wind.png",
+  Pressure: "/react-weather-app/icon/pressure.png",
 };
 
 // weather logos for diff conditions
 export const WeatherLogos = {
-  "01d": "./React-Weather-App/icon/weathers/clear-sky.png",
-  "01n": "./React-Weather-App/icon/weathers/clear-n.png",
-  "02d": "./React-Weather-App/icon/weathers/few-clouds.png",
-  "02n": "./React-Weather-App/icon/weathers/broken-clouds.png",
-  "03d": "./React-Weather-App/icon/weathers/scattered-clouds.png",
-  "03n": "./React-Weather-App/icon/weathers/scattered-clouds.png",
-  "04d": "./React-Weather-App/icon/weathers/broken-clouds.png",
-  "04n": "./React-Weather-App/icon/weathers/broken-clouds.png",
-  "09d": "./React-Weather-App/icon/weathers/shower-rain.png",
-  "09n": "./React-Weather-App/icon/weathers/shower-rain.png",
-  "10d": "./React-Weather-App/icon/weathers/rain.png",
-  "10n": "./React-Weather-App/icon/weathers/rain-n.png",
-  "11d": "./React-Weather-App/icon/weathers/thunderstorm.png",
-  "11n": "./React-Weather-App/icon/weathers/thunderstorm.png",
-  "13d": "./React-Weather-App/icon/weathers/snow.png",
-  "13n": "./React-Weather-App/icon/weathers/snow.png",
-  "50d": "./React-Weather-App/icon/weathers/mist.png",
-  "50n": "./React-Weather-App/icon/weathers/mist.png",
+  "01d": "/react-weather-app/icon/weathers/clear-sky.png",
+  "01n": "/react-weather-app/icon/weathers/clear-n.png",
+  "02d": "/react-weather-app/icon/weathers/few-clouds.png",
+  "02n": "/react-weather-app/icon/weathers/broken-clouds.png",
+  "03d": "/react-weather-app/icon/weathers/scattered-clouds.png",
+  "03n": "/react-weather-app/icon/weathers/scattered-clouds.png",
+  "04d": "/react-weather-app/icon/weathers/broken-clouds.png",
+  "04n": "/react-weather-app/icon/weathers/broken-clouds.png",
+  "09d": "/react-weather-app/icon/weathers/shower-rain.png",
+  "09n": "/react-weather-app/icon/weathers/shower-rain.png",
+  "10d": "/react-weather-app/icon/weathers/rain.png",
+  "10n": "/react-weather-app/icon/weathers/rain-n.png",
+  "11d": "/react-weather-app/icon/weathers/thunderstorm.png",
+  "11n": "/react-weather-app/icon/weathers/thunderstorm.png",
+  "13d": "/react-weather-app/icon/weathers/snow.png",
+  "13n": "/react-weather-app/icon/weathers/snow.png",
+  "50d": "/react-weather-app/icon/weathers/mist.png",
+  "50n": "/react-weather-app/icon/weathers/mist.png",
 };
 
 const WeatherCondition = styled.div`
